@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail" data-bg-color="#081420">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#081420"/>
+    <circle cx="600" cy="400" r="4" fill="#e3bb75"/>
+    <path d="M600 250 L616 384 L750 400 L616 416 L600 550 L584 416 L450 400 L584 384 Z" fill="#e3bb75"/>
+  </svg>
+</template>
+<helmet data-dc-atomics="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&amp;family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@300;400;500;600&amp;family=Newsreader:ital,wght@0,400;0,500;0,600;1,500&amp;family=Work+Sans:wght@300;400;500;600&amp;family=Spectral:ital,wght@400;500;600;1,400&amp;family=Sora:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff;font-family:Jost,sans-serif}
+#dc-root{max-width:none;margin:0}
+a{color:inherit}
+@media (max-width:600px){
+  [data-screen-label="Hero"]{height:92vw !important;background-position:center 35% !important}
+  #manifesto1-row{flex-direction:column !important;flex-wrap:nowrap !important}
+  #manifesto2-row{flex-direction:column !important;flex-wrap:nowrap !important}
+  #manifesto2-row #manifesto-v2{order:2}
+  #manifesto2-cta{order:3}
+  #about{flex-direction:column}
+  #about-photo{order:2}
+  #hero-cta{padding:9px 20px !important;font-size:10px !important;box-shadow:0 0 0 1.5px #8fd4f0,0 0 14px rgba(143,212,240,.75),0 0 28px rgba(143,212,240,.45) !important}
+  #hero-brand{font-size:10px !important}
+  [data-screen-label]{padding-left:18px !important;padding-right:18px !important}
+  [data-screen-label="Manifesto"]{padding-top:22px !important;padding-bottom:0 !important}
+  [data-screen-label="Manifesto — Ver 2.0"]{padding-top:26px !important;padding-bottom:40px !important}
+  [data-screen-label="Za koga je"] > div{padding-top:28px !important;padding-bottom:32px !important}
+  [data-screen-label="Šta ćemo istražiti"]{padding-top:34px !important;padding-bottom:18px !important}
+  [data-screen-label="Šta dobijaš"]{padding-top:34px !important;padding-bottom:34px !important}
+  [data-screen-label="Mapa lekcija"]{padding-top:40px !important;padding-bottom:40px !important}
+  [data-screen-label="Da li je ovo za tebe"]{padding-top:34px !important;padding-bottom:34px !important}
+  [data-screen-label="Cena"]{padding-top:34px !important;padding-bottom:34px !important}
+  [data-screen-label="O meni"]{padding-top:34px !important;padding-bottom:34px !important}
+  [data-screen-label="FAQ"]{padding-top:34px !important;padding-bottom:34px !important}
+  [data-screen-label="Kontakt"]{padding-top:26px !important;padding-bottom:26px !important}
+}
+</style>
+</helmet>
+<x-import component-from-global-scope="image-slot" from="./image-slot.js" hint-size="1,1" style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0"></x-import>
+
+  <!-- HERO -->
+  <div data-screen-label="Hero" style="position:relative;height:clamp(480px,72vw,640px);background:url('assets/hero-lions.png') center 75%/cover no-repeat;display:flex;align-items:center;justify-content:flex-end;overflow:hidden">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,20,24,.15),rgba(6,20,24,.55))"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 70%,rgba(227,187,117,.35) 100%)"></div>
+    <div style="position:absolute;top:70px;right:90px;color:#e8c988;font-size:15px;text-shadow:0 0 8px #e3bb75,0 0 18px #e3bb7599">✦</div>
+    <div style="position:absolute;top:150px;left:110px;color:#e8c988;font-size:10px;text-shadow:0 0 6px #e3bb75,0 0 14px #e3bb7599">✧</div>
+    <div style="position:absolute;bottom:110px;right:180px;color:#e8c988;font-size:12px;text-shadow:0 0 8px #e3bb75,0 0 16px #e3bb7599">✦</div>
+    <div style="position:absolute;top:clamp(20px,4vw,44px);left:clamp(20px,4vw,60px);right:clamp(20px,4vw,90px);z-index:1;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+      <span id="hero-brand" style="font:500 15px Jost,sans-serif;letter-spacing:.08em;color:#fff;text-transform:uppercase">MIKELANĐELO NA IDENTITET</span>
+      <nav style="display:flex;flex-wrap:wrap;gap:clamp(14px,4vw,36px);font:400 clamp(11px,2.6vw,13px) Jost,sans-serif;letter-spacing:.04em;color:#eaf1f6;text-transform:uppercase">
+        <a href="#modules" style="color:inherit;text-decoration:none;cursor:pointer">Program</a>
+        <a href="#about" style="color:inherit;text-decoration:none;cursor:pointer">O meni</a>
+        <a href="#faq" style="color:inherit;text-decoration:none;cursor:pointer">FAQ</a>
+        <a href="#contact" style="color:inherit;text-decoration:none;cursor:pointer">Kontakt</a>
+      </nav>
+    </div>
+    <div style="position:relative;z-index:1;text-align:right;padding:clamp(20px,6vw,40px) clamp(20px,6vw,90px) 0 clamp(16px,4vw,60px)">
+      <div style="display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:18px">
+        <span style="color:#e8c988;font-size:11px;text-shadow:0 0 8px #e3bb75,0 0 16px #e3bb7599">✦</span>
+        <span style="font:500 clamp(9px,2.2vw,13px) Jost,sans-serif;letter-spacing:.22em;color:#bfe0ef;text-transform:uppercase">8-nedeljno online putovanje</span>
+      </div>
+      
+      
+      <h1 style="font:600 clamp(24px,7vw,60px)/1.08 'Bodoni Moda',serif;color:#fff;margin:0 0 22px;text-shadow:0 2px 26px rgba(0,0,0,.35)"><span style="font-style:italic;font-weight:400;text-transform:lowercase">vrati se na</span><br>IZVORNI KOD</h1><p style="font:italic 400 clamp(12px,3vw,19px)/1.5 'Bodoni Moda',serif;color:#eaf1f6;max-width:min(480px,90vw);margin:-12px 0 30px auto;text-shadow:0 1px 12px rgba(0,0,0,.3)">Pre uloga. Pre maski. Pre svega naučenog što sada jesi.<br>Jer odavde počinje aktivacija.</p><a id="hero-cta" href="https://forms.gle/wrHyMiDW9NG78mgc6" target="_blank" rel="noopener" style="display:inline-flex;padding:13px 32px;background:{{ accentColor }};color:#0b2436;border-radius:2px;font:500 12px Jost,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none">{{ ctaLabel }}</a>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <div data-screen-label="Manifesto" style="background:#fbfdfc;padding:32px clamp(20px,6vw,90px) 0;text-align:center">
+    <div id="manifesto1-row" style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap-reverse;gap:44px;align-items:center;text-align:left">
+      <div style="flex:1 1 320px;min-width:260px;font:400 14px/1.8 Jost,sans-serif;color:#1e2a30;text-align:center">
+      <p style="font:italic 700 14px/1.6 Jost,sans-serif;color:#2f6a8c;text-align:center">Nisi ovde da naučiš nešto novo.&nbsp;Ovde si da se setiš.</p>
+      <p>Već si zakoračila duboko u sebe. A ipak — osećaš da ispod površine postoji verzija tebe koja još nije aktivirana.</p>
+      <p>Umorna od dokazivanja. Umorna od prilagođavanja. Umorna od toga da budeš dovoljno dobra po tuđim merilima, dok onaj pravi deo tebe čeka, negde iza svega naučenog, da konačno progovori.</p>
+      <p>Svet oko tebe još uvek govori starim jezikom — jezikom uloga, titula, merila koja tebe ne mere. Dok čekaš da te taj svet konačno prepozna, nešto u tebi tiho gori, neprimećeno, iz dana u dan.</p>
+      <p>Nisi izgubljena. Nikad nisi ni bila. Samo si predugo govorila tuđim glasom, u tuđoj priči, po tuđim pravilima igre — dok je tvoj Izvorni kod čekao, strpljivo, da ga se konačno setiš. Ono što nazivaš "nisam dovoljno…" nije istina o tebi — to je samo stari kod, ugrađen davno, koji i dalje radi u pozadini tvog unutrašnjeg operativnog sistema.</p>
+      <p>To je tvoja <b>Ver 1.0</b> — verzija sastavljena od tuđih pravila, tuđih glasova, tuđih merila uspeha. Radila je, dovela te dovde. Ali nije ono što jesi u suštini — samo je ono što si do sada znala da pokreneš.</p>
+      <p style="font:italic 700 14px/1.6 Jost,sans-serif;color:#2f6a8c;text-align:center;margin:30px 0 0">TO SE SADA ZAVRŠAVA.</p>
+      </div>
+      <image-slot id="manifesto-v1" shape="rect" style="flex:0 1 260px;min-width:200px;max-width:280px;aspect-ratio:4/5;border-radius:4px;filter:drop-shadow(0 0 24px rgba(227,187,117,.45));-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%)" placeholder="Silueta/senka žene koja gleda svoj odraz — simbol Ver 1.0" src="assets/manifesto-transformation.png"></image-slot>
+    </div>
+  </div>
+
+  <!-- MANIFESTO PART 2 -->
+  <div data-screen-label="Manifesto — Ver 2.0" style="background:#fbfdfc;padding:40px clamp(20px,6vw,90px) clamp(50px,10vw,84px);text-align:center">
+    <div id="manifesto2-row" style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;gap:44px;align-items:center;text-align:left">
+      <image-slot id="manifesto-v2" shape="rect" style="flex:0 1 260px;min-width:200px;max-width:280px;aspect-ratio:4/5;border-radius:4px;filter:drop-shadow(0 0 24px rgba(227,187,117,.45));-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%)" placeholder="Žena okrenuta ka svetlosti/zvezdanom nebu — simbol Ver 2.0" src="assets/manifesto-v2-light.png"></image-slot>
+      <div style="flex:1 1 320px;min-width:260px;font:400 14px/1.8 Jost,sans-serif;color:#1e2a30;text-align:center">
+      <p>Tvoja vrednost ne čeka tuđe odobrenje. Ona je bila tu pre svake uloge koju si igrala, i biće tu posle svake maske koju skineš.</p>
+      <p>Neka ovo bude trenutak kad prestaješ da tražiš dozvolu da postojiš i budeš ono što jesi — i počinješ da se vraćaš na Izvorni kod iz kog je sve krenulo.</p>
+      <p>Ovaj program ne dodaje još jednu tehniku na sve ono što si već probala. On te vodi pravo u Izvorni Kod — čita ga, ažurira ono što je zastarelo, i pokreće verziju koja je oduvek čekala ispod površine: tvoju <b>Ver 2.0</b> — usklađenu sa daleko uzvišenijim modelom tvog života, ne sa modelom koji ti je nametnut.</p>
+      <p>Program <i>VRATI SE NA IZVORNI KOD</i> je snažno, transformativno, 8-nedeljno online putovanje za one koje su gotove sa dokazivanjem, sa maskama koje ih iscrpljuju, sa pričama koje su predugo prodavale sebi, i sa životom pisanim tuđim rukopisom.</p>
+      </div>
+    </div>
+    <a id="manifesto2-cta" href="https://forms.gle/wrHyMiDW9NG78mgc6" target="_blank" rel="noopener" style="display:inline-flex;margin-top:32px;padding:12px 30px;background:{{ accentColor }};color:#0b2436;border-radius:2px;font:500 12px Jost,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none">{{ ctaLabel }}</a>
+  </div>
+
+  <!-- AUDIENCE -->
+  <div data-screen-label="Za koga je" style="background:#fbfdfc;margin-top:-40px">
+    <div style="background:#eaf1f6;clip-path:polygon(0 0,100% 4.5%,100% 100%,0 95.5%);padding:clamp(36px,8vw,56px) clamp(20px,6vw,90px) clamp(40px,8vw,64px)">
+    <h2 style="font: 500 30px 'Bodoni Moda',serif; color: #111c26; text-align: center; margin: 0 0 36px; font-style: italic"><b><span style="font-weight: normal;">Za one koje…</span></b></h2>
+    <sc-for list="{{ audienceProfile }}" as="item" hint-placeholder-count="6">
+      <div style="display:flex;gap:14px;max-width:620px;margin:0 auto 16px;align-items:flex-start">
+        <span style="color:#3f7ea6;font:14px Jost;flex:none;margin-top:3px">✦</span>
+        <span style="font: 300 15px/1.65 Jost,sans-serif; color: #16222c; font-style: normal">{{ item }}</span>
+      </div>
+    </sc-for>
+    </div>
+  </div>
+
+  <!-- MODULE INTRO -->
+  <div data-screen-label="Šta ćemo istražiti" style="background:#fbfdfc;padding:52px 0 28px;text-align:center">
+    <h2 style="font:500 32px 'Bodoni Moda',serif;color:#111c26;margin:0"><i>Šta ćemo istražiti</i></h2>
+  </div>
+
+  <!-- MODULES -->
+  <div id="modules" style="background:#fbfdfc;padding:clamp(16px,4vw,20px) clamp(20px,6vw,90px) 10px;display:flex;flex-direction:column;gap:36px;scroll-margin-top:100px">
+    <sc-for list="{{ modules }}" as="m" hint-placeholder-count="4">
+      <div style="border:1.5px solid #3f7ea655;border-radius:8px;padding:30px 34px;background:#fff;box-shadow:0 4px 16px rgba(17,28,38,.08);transition:border .2s,box-shadow .2s" style-hover="border:2px solid #e3bb75;box-shadow:0 0 22px rgba(201,161,90,.55),0 0 44px rgba(201,161,90,.3)">
+        <div style="font:500 14px Jost;letter-spacing:.16em;color:#3f7ea6;text-transform:uppercase;margin-bottom:6px">Modul {{ m.num }}</div>
+        <h3 style="font:600 22px 'Bodoni Moda',serif;color:#111c26;margin:0 0 10px">{{ m.title }}</h3>
+        <p style="font:italic 400 14.5px/1.6 'Bodoni Moda',serif;color:#2f6a8c;margin:0 0 14px">{{ m.intro }}</p>
+        <sc-for list="{{ m.bullets }}" as="b" hint-placeholder-count="4">
+          <div style="display:flex;gap:10px;margin-bottom:8px"><span style="color:#3f7ea6">—</span><span style="font:300 14.5px/1.6 Jost,sans-serif;color:#1e2a30">{{ b }}</span></div>
+        </sc-for>
+      </div>
+    </sc-for>
+    <p style="text-align:center;font:italic 400 15px/1.6 'Bodoni Moda',serif;color:#2f6a8c;margin:0 0 12px">Formula je gotova. Ostalo je na tebi.</p>
+    <div style="display:flex;justify-content:center;margin-top:-24px">
+      <a href="https://forms.gle/wrHyMiDW9NG78mgc6" target="_blank" rel="noopener" style="display:inline-flex;padding:13px 32px;background:{{ accentColor }};color:#0b2436;border-radius:2px;font:500 12px Jost,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none">Želim da se prijavim</a>
+    </div>
+  </div>
+
+  <!-- WHAT YOU GET -->
+  <div data-screen-label="Šta dobijaš" style="background:#fbfdfc;padding:clamp(44px,8vw,70px) clamp(20px,6vw,90px)">
+    <h2 style="font:500 30px 'Bodoni Moda',serif;text-align:center;margin:0 0 38px;color:#111c26"><i>Šta dobijaš</i></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 36px;max-width:740px;margin:0 auto">
+      <sc-for list="{{ deliverables }}" as="d" hint-placeholder-count="9">
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <sc-if value="{{ d.gift }}" hint-placeholder-val="{{ false }}">
+            <span style="flex:none;width:34px;height:34px;border-radius:7px;background:#eaf1f6;border:1px solid #3f7ea633;display:flex;align-items:center;justify-content:center;position:relative">
+              <span style="position:relative;width:13px;height:9px;border:1.4px solid #3f7ea6;border-radius:1px;margin-top:3px;background:transparent">
+                <span style="position:absolute;top:-5px;left:5px;width:2px;height:13px;background:#3f7ea6"></span>
+                <span style="position:absolute;top:-5px;left:-1.4px;width:15px;height:2px;background:#3f7ea6;border-radius:1px"></span>
+                <span style="position:absolute;top:-8px;left:-1px;width:5px;height:5px;border:1.4px solid #3f7ea6;border-radius:50% 50% 0 50%;transform:rotate(-20deg);background:transparent"></span>
+                <span style="position:absolute;top:-8px;right:-1px;width:5px;height:5px;border:1.4px solid #3f7ea6;border-radius:50% 50% 50% 0;transform:rotate(20deg);background:transparent"></span>
+              </span>
+            </span>
+          </sc-if>
+          <sc-if value="{{ d.notGift }}" hint-placeholder-val="{{ true }}">
+            <span style="flex:none;width:34px;height:34px;border-radius:7px;background:#eaf1f6;border:1px solid #3f7ea633;display:flex;align-items:center;justify-content:center;font-size:14px;color:#3f7ea6">{{ d.icon }}</span>
+          </sc-if>
+          <span style="font:300 14px/1.5 Jost,sans-serif;padding-top:5px;color:#1e2a30">{{ d.text }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- LESSON MAP -->
+  <sc-if value="{{ showLessonMap }}" hint-placeholder-val="{{ true }}">
+  <div data-screen-label="Mapa lekcija" style="position:relative;background:radial-gradient(ellipse 90% 70% at 85% 8%,#132a3f,#081420 55%,#050d16 100%);padding:clamp(56px,10vw,100px) clamp(20px,6vw,90px) clamp(64px,10vw,120px);overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.4px 1.4px at 8% 12%,#fff,transparent),radial-gradient(1px 1px at 18% 34%,#fff,transparent),radial-gradient(1.6px 1.6px at 30% 8%,#fff,transparent),radial-gradient(1px 1px at 42% 22%,#fff,transparent),radial-gradient(1.4px 1.4px at 55% 6%,#fff,transparent),radial-gradient(1px 1px at 62% 30%,#fff,transparent),radial-gradient(1.6px 1.6px at 75% 14%,#fff,transparent),radial-gradient(1px 1px at 85% 40%,#fff,transparent),radial-gradient(1.4px 1.4px at 92% 10%,#fff,transparent),radial-gradient(1px 1px at 12% 60%,#fff,transparent),radial-gradient(1.2px 1.2px at 25% 80%,#fff,transparent),radial-gradient(1px 1px at 48% 70%,#fff,transparent),radial-gradient(1.4px 1.4px at 68% 85%,#fff,transparent),radial-gradient(1px 1px at 90% 75%,#fff,transparent),radial-gradient(1px 1px at 5% 90%,#fff,transparent);opacity:.55"></div>
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.6px 1.6px at 14% 20%,#8fd4f0,transparent),radial-gradient(1.4px 1.4px at 36% 14%,#8fd4f0,transparent),radial-gradient(1.8px 1.8px at 60% 20%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 78% 30%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 95% 24%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 22% 50%,#8fd4f0,transparent),radial-gradient(1.8px 1.8px at 40% 62%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 58% 48%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 72% 66%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 88% 55%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 15% 78%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 33% 90%,#8fd4f0,transparent),radial-gradient(1.8px 1.8px at 52% 82%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 80% 90%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 96% 82%,#a9e2ff,transparent);opacity:.7"></div>
+    <div style="position:relative;z-index:1;text-align:center;margin-bottom:64px">
+      <h2 style="font:italic 500 34px 'Bodoni Moda',serif;color:#fdf6e8;margin:0 0 14px">Tvoja putanja kroz program</h2>
+      <p style="font:300 16px Jost,sans-serif;color:#bfe0ef;margin:0">Četiri modula, 21 lekcija — jedna staza — od čitanja koda do života usklađenog sa njim.</p>
+    </div>
+    <sc-for list="{{ lessonMap }}" as="mod" hint-placeholder-count="4">
+      <div style="position:relative;z-index:1;margin-bottom:64px">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:30px">
+          <span style="flex:none;font-size:40px;line-height:1;color:#bfe0ef;text-shadow:0 0 10px #7fc4e8,0 0 26px #4a9bccaa,0 0 44px #2f6a8c88">✦</span>
+          <div>
+            <div style="font:500 12px Jost,sans-serif;letter-spacing:.16em;color:#bfe0ef;text-transform:uppercase;margin-bottom:2px">Modul {{ mod.num }}</div>
+            <h3 style="font:600 24px 'Bodoni Moda',serif;color:#fdf6e8;margin:0">{{ mod.title }}</h3>
+          </div>
+        </div>
+        <div style="position:relative;padding:34px 10px 10px">
+          <div style="position:absolute;left:8%;right:8%;top:38%;height:1px;background:linear-gradient(90deg,transparent,#e3bb7566 15%,#e3bb7599 50%,#e3bb7566 85%,transparent);transform:rotate(-1.2deg);z-index:0"></div>
+          <div style="position:absolute;left:12%;right:20%;top:58%;height:1px;background:linear-gradient(90deg,transparent,#e3bb7555 20%,#e3bb7588 55%,transparent);transform:rotate(1.6deg);z-index:0"></div>
+          <div style="position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px 8px">
+            <sc-for list="{{ mod.lessons }}" as="l" hint-placeholder-count="5">
+              <div style="flex:1 1 120px;max-width:150px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;margin-top:{{ l.offset }}px">
+                <span style="font-size:30px;line-height:1;color:#d9b872;text-shadow:0 0 6px #e3bb75,0 0 16px #e3bb7599,0 0 28px #8a6a2c66">✦</span>
+                <span style="font:500 11px Jost,sans-serif;letter-spacing:.08em;color:#e3bb75;text-transform:uppercase">Lekcija {{ l.num }}</span>
+                <span style="font:400 12.5px/1.4 Jost,sans-serif;color:#dce8f0">{{ l.title }}</span>
+              </div>
+              <sc-if value="{{ l.breakAfter }}">
+                <div style="flex-basis:100%;height:0"></div>
+              </sc-if>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  </sc-if>
+
+  <!-- YES/NO -->
+  <div data-screen-label="Da li je ovo za tebe" style="background:#fbfdfc;padding:clamp(44px,8vw,70px) clamp(20px,6vw,90px)">
+    <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;text-align:center;margin:0 0 40px"><i>Da li je ovo za tebe ?</i></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:44px">
+      <div>
+        <div style="font:500 12px Jost;color:#3f7ea6;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">✓ Ovo je za tebe ako…</div>
+        <sc-for list="{{ audienceYes }}" as="y" hint-placeholder-count="4">
+          <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+            <span style="color:#3f7ea633;font:11px Jost;flex:none;margin-top:2px">✦</span>
+            <p style="font:300 13.5px/1.6 Jost,sans-serif;color:#1e2a30;margin:0">{{ y.t }}<sc-if value="{{ y.i }}" hint-placeholder-val="{{ false }}"> <em>{{ y.i }}</em></sc-if></p>
+          </div>
+        </sc-for>
+      </div>
+      <div>
+        <div style="font:500 12px Jost;color:#a35b4a;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">✕ Ovo nije za tebe ako…</div>
+        <sc-for list="{{ audienceNo }}" as="n" hint-placeholder-count="3">
+          <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+            <span style="color:#a35b4a33;font:11px Jost;flex:none;margin-top:2px">✕</span>
+            <p style="font:300 13.5px/1.6 Jost,sans-serif;color:#1e2a30;margin:0">{{ n }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div data-screen-label="Cena" style="background:#eaf1f6;padding:clamp(44px,8vw,72px) clamp(20px,6vw,90px);text-align:center">
+    <p style="font:300 13.5px Jost;color:#e3bb75;opacity:.7;margin:0 0 20px">VRATI SE NA IZVORNI KOD</p>
+    
+    <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;margin:0 0 40px"><i>Izaberi paket koji ti najviše odgovara&nbsp;</i></h2><div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:stretch;margin-top:14px">
+      <div style="background:#fff;border:1px solid #3f7ea633;border-radius:4px;padding:32px 30px;width:100%;max-width:280px;text-align:left;display:flex;flex-direction:column">
+        <div style="font:500 12px Jost;letter-spacing:.1em;color:#3f7ea6;text-transform:uppercase;margin-bottom:12px">MINI PAKET PROGRAMA</div>
+        <div style="font:300 15px 'Bodoni Moda',serif;color:#8fa9a5;text-decoration:line-through;margin-bottom:2px">197 €</div>
+        <div style="font:600 32px 'Bodoni Moda',serif;color:#111c26;margin-bottom:12px">147 €</div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:16px">
+          <sc-for list="{{ miniPackageIncludes }}" as="inc" hint-placeholder-count="3">
+            <div style="display:flex;gap:8px;align-items:baseline;font:300 13px/1.4 Jost,sans-serif;color:#1e2a30">
+              <span style="color:#3f7ea6;flex:none">✓</span>
+              <span>{{ inc }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font:italic 300 11.5px/1.5 Jost,sans-serif;color:#2f6a8c;opacity:.8;margin:18px 0 0">Prva jasna slika tvoje Ver 1.0 koja je kreirala i vodi tvoj unutrašnji softver — čitaj tvoj život. Izuzetno vredan modul koji svako treba da prođe. Temelj.</p>
+        <div style="display:flex;justify-content:center;margin-top:auto;padding-top:16px"><a href="https://forms.gle/wrHyMiDW9NG78mgc6" target="_blank" rel="noopener" style="display:inline-flex;padding:11px 26px;background:{{ accentColor }};color:#0b2436;border-radius:2px;font:500 12px Jost,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none">Prijavljujem se</a></div>
+      </div>
+      <div style="background:radial-gradient(ellipse 100% 100% at 70% 0%,#132a3f,#081420 55%,#050d16 100%);border-radius:4px;padding:32px 30px;width:100%;max-width:280px;text-align:left;position:relative;color:#eaf1f6;overflow:visible">
+        <div style="position:absolute;inset:0;z-index:0;background-image:radial-gradient(1.4px 1.4px at 12% 18%,#fff,transparent),radial-gradient(1px 1px at 30% 42%,#fff,transparent),radial-gradient(1.6px 1.6px at 55% 12%,#fff,transparent),radial-gradient(1px 1px at 75% 30%,#fff,transparent),radial-gradient(1.3px 1.3px at 88% 55%,#fff,transparent),radial-gradient(1px 1px at 18% 72%,#fff,transparent),radial-gradient(1.4px 1.4px at 65% 80%,#fff,transparent),radial-gradient(1px 1px at 92% 85%,#fff,transparent);opacity:.7"></div>
+        <div style="position:absolute;top:12px;right:16px;z-index:0;color:#e8c988;font-size:12px;text-shadow:0 0 8px #e3bb75,0 0 16px #e3bb7599">✦</div>
+        <div style="position:absolute;top:-13px;right:22px;z-index:2;background:#e3bb75;color:#0b2436;font:500 10px Jost;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:20px">Najbolja ponuda ikada</div>
+        <div style="position:relative;z-index:1;font:500 12px Jost;letter-spacing:.1em;color:#9cc6de;text-transform:uppercase;margin-bottom:12px">Ceo program</div>
+        <div style="position:relative;z-index:1;font:300 15px 'Bodoni Moda',serif;color:#8fa9a5;text-decoration:line-through;margin-bottom:2px">497 €</div>
+        <div style="position:relative;z-index:1;font:600 32px 'Bodoni Moda',serif;color:#e8c988;margin-bottom:12px;text-shadow:0 0 18px #e3bb7566">397 €</div>
+        <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:8px;margin-top:16px">
+          <sc-for list="{{ fullProgramIncludes }}" as="inc" hint-placeholder-count="4">
+            <div style="display:flex;gap:8px;align-items:baseline;font:300 13px/1.4 Jost,sans-serif;color:#eaf1f6">
+              <span style="color:#e3bb75;flex:none">✓</span>
+              <span>{{ inc }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="position:relative;z-index:1;font:italic 300 11.5px/1.5 Jost,sans-serif;color:#9cc6de;opacity:.8;margin:18px 0 0">Plativo u celosti, ili na 2 rate po 200 EUR.</p>
+        <div style="position:relative;z-index:1;display:flex;justify-content:center;margin-top:16px"><a href="https://forms.gle/wrHyMiDW9NG78mgc6" target="_blank" rel="noopener" style="display:inline-flex;padding:11px 26px;background:{{ accentColor }};color:#0b2436;border-radius:2px;font:500 12px Jost,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none">Prijavljujem se</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div data-screen-label="O meni" id="about" style="background:#fbfdfc;padding:clamp(44px,8vw,76px) clamp(20px,6vw,90px);display:flex;flex-wrap:wrap;gap:clamp(28px,6vw,60px);align-items:center;scroll-margin-top:100px">
+    <div id="about-photo" style="flex:none;width:230px;height:290px;margin:0 auto;border-radius:4px;overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);mask-composite:intersect"><img src="assets/milena-portrait.png" alt="Milena Trifunović" style="width:100%;height:100%;object-fit:cover;display:block;filter:blur(0px)"></div>
+    <div style="flex:1 1 320px;min-width:260px">
+      <h2 style="font:500 26px 'Bodoni Moda',serif;color:#111c26;margin:0 0 16px"><i>O meni ...</i></h2>
+      <p style="font:300 14.5px/1.75 Jost,sans-serif;color:#1e2a30;margin:0 0 12px">Zdravo, ja sam <b>Milena Trifunović</b>.</p>
+      <p style="font:300 14.5px/1.75 Jost,sans-serif;color:#1e2a30;margin:0 0 12px">Po formalnom obrazovanju, geodetski inženjer (gradjevinski fakultet). Kroz nekoliko projekata radila sam na strukturi i razvoju sistema — kao geodeti zemlja je uvek bila polazna tačka, temelj na kom se sve dalje gradi. Istovremeno, srcem sam uvek bila među zvezdama.</p>
+      <p style="font:300 14.5px/1.75 Jost,sans-serif;color:#1e2a30;margin:0 0 12px">Već deset i više godina, jedno je bio posao. Zvezde su poziv iz centra duše. Astrologija, energetska psihologija i mitologija — tri jezika koja, čitana zajedno, otkrivaju ono što se ne vidi na prvi pogled: unutrašnji operativni sistem.</p>
+      <p style="font:300 14.5px/1.75 Jost,sans-serif;color:#1e2a30;margin:0 0 12px">Isti princip, drugi materijal. Nekad sam gradila sisteme na zemlji. Sada čitam i ažuriram sisteme koji nisu manje stvarni samo zato što su nevidljivi.</p>
+      <p style="font:italic 500 16px/1.6 'Bodoni Moda',serif;color:#2f6a8c;margin:20px 0"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-font-kerning:0pt;mso-ligatures:none;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Kad su pitali Mikelanđela&nbsp;Buonaroti&nbsp;kako je od mermera
+stvorio Davida, odgovorio je: </span>"Nisam video kamen. Video sam Davida u kamenu. Trebalo je samo da uklonim sve što nije David."&nbsp;</p>
+      <p style="font:300 14.5px/1.75 Jost,sans-serif;color:#1e2a30;margin:0 0 12px">Otud ime moje stranice — <i data-om-id="15336dec:186">Mikelanđelo na identitet.</i> Ne dodajem ništa novo. Poput vajara, uklanjamo sve što nismo mi u svojoj suštini — i ono što ostaje jeste ono što smo oduvek i bili.</p>
+      <p style="font:300 14.5px/1.75 Jost,sans-serif;color:#1e2a30"><i>Vrati se na Izvorni kod</i> je taj isti princip, pretočen u sistem. Ne gradim ti nov identitet. Pomažem ti da pokreneš verziju koja je oduvek čekala ispod površine. A zatim ostaje na tebi da je uskladiš sa daleko uzvišenijim modelom tvog života — ne sa modelom koji ti je nametnut.</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div data-screen-label="FAQ" id="faq" style="background:#eaf1f6;padding:clamp(44px,8vw,76px) clamp(20px,6vw,90px);scroll-margin-top:100px">
+    <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;text-align:center;margin:0 0 40px"><i>Često postavljana pitanja</i></h2>
+    <div style="max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:0">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="9">
+        <div style="border-bottom:1px solid #3f7ea633">
+          <div onClick="{{ f.toggle }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 4px;cursor:pointer">
+            <span style="font:500 15px Jost,sans-serif;color:#111c26">{{ f.q }}</span>
+            <span style="flex:none;font:16px Jost,sans-serif;color:#3f7ea6;transform:{{ f.chevronTransform }};transition:transform .2s">⌄</span>
+          </div>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 18px;padding:0 4px;font:300 14px/1.6 Jost,sans-serif;color:#3f7ea6;white-space:pre-line">{{ f.a }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- MAILING + CONTACT -->
+  <div data-screen-label="Kontakt" id="contact" style="position:relative;background:radial-gradient(ellipse 90% 70% at 85% 8%,#132a3f,#081420 55%,#050d16 100%);padding:clamp(32px,6vw,48px) clamp(20px,6vw,90px);text-align:center;color:#eaf1f6;overflow:hidden;scroll-margin-top:100px">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.4px 1.4px at 8% 12%,#fff,transparent),radial-gradient(1px 1px at 18% 34%,#fff,transparent),radial-gradient(1.6px 1.6px at 30% 8%,#fff,transparent),radial-gradient(1px 1px at 42% 22%,#fff,transparent),radial-gradient(1.4px 1.4px at 55% 6%,#fff,transparent),radial-gradient(1px 1px at 62% 30%,#fff,transparent),radial-gradient(1.6px 1.6px at 75% 14%,#fff,transparent),radial-gradient(1px 1px at 85% 40%,#fff,transparent),radial-gradient(1.4px 1.4px at 92% 10%,#fff,transparent),radial-gradient(1px 1px at 12% 60%,#fff,transparent),radial-gradient(1.2px 1.2px at 25% 80%,#fff,transparent),radial-gradient(1px 1px at 48% 70%,#fff,transparent),radial-gradient(1.4px 1.4px at 68% 85%,#fff,transparent),radial-gradient(1px 1px at 90% 75%,#fff,transparent),radial-gradient(1px 1px at 5% 90%,#fff,transparent);opacity:.55"></div>
+    <div style="position:absolute;inset:0;background-image:radial-gradient(1.6px 1.6px at 14% 20%,#8fd4f0,transparent),radial-gradient(1.4px 1.4px at 36% 14%,#8fd4f0,transparent),radial-gradient(1.8px 1.8px at 60% 20%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 78% 30%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 95% 24%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 22% 50%,#8fd4f0,transparent),radial-gradient(1.8px 1.8px at 40% 62%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 58% 48%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 72% 66%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 88% 55%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 15% 78%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 33% 90%,#8fd4f0,transparent),radial-gradient(1.8px 1.8px at 52% 82%,#a9e2ff,transparent),radial-gradient(1.4px 1.4px at 80% 90%,#8fd4f0,transparent),radial-gradient(1.6px 1.6px at 96% 82%,#a9e2ff,transparent);opacity:.7"></div>
+    <div style="position:relative;z-index:1">
+    <h2 style="font:italic 500 30px 'Bodoni Moda',serif;color:#fdf6e8;margin:0 0 18px">Ostanimo u kontaktu</h2>
+    <div style="font:300 13px Jost,sans-serif;color:#a9c2d1"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><i>Pitanja
+u vezi programa? Zakaži besplatni poziv na</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;porodicanovogdoba</span>@gmail.com</div>
+    </div>
+  </div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;ctaLabel&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;Želim da se prijavim&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Sadržaj&quot; },
+  &quot;accentColor&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#e3bb75&quot;, &quot;options&quot;: [&quot;#e3bb75&quot;, &quot;#74b0d2&quot;, &quot;#3f7ea6&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Izgled&quot; },
+  &quot;showLessonMap&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Izgled&quot; }
+}">
+class Component extends DCLogic {
+  state = { openFaq: null };
+  renderVals() {
+    return {
+      ctaLabel: this.props.ctaLabel ?? 'Želim da se prijavim',
+      accentColor: this.props.accentColor ?? '#e3bb75',
+      showLessonMap: this.props.showLessonMap ?? true,
+      fullProgramIncludes: ['4 modula', '21 lekcija', '8 online live susreta', 'Privatna grupa za podršku između live susreta', 'Poklon bonusi'],
+      miniPackageIncludes: ['1 modul', '4 lekcije', '1 online live susret'],
+      modules: [
+        {
+          num: 1,
+          title: 'ČITANJE KODA',
+          intro: 'U ovom modulu po prvi put vidimo ono što je do sad samo bio osećaj i unutrašnje vođstvo, rečima gotovo neizrecivo.',
+          bullets: [
+            'Otkrivaš svoju kompletnu Arhetipsku Mapu koja ti pomaže da pročitaš svoj Izvorni kod — energetski obrazac koji pokreće tvoj operativni sistem',
+            'Prepoznaješ obrasce koji određuju zašto se određene situacije ponavljaju u tvom životu',
+            'Spoznaješ šta te iscrpljuje kada ne živiš svoju najautentičniju ekspresiju onoga što jesi; a šta te oživljava kada sebi daš prostor',
+            'Kroz Kompas autentičnosti proveravaš da li živiš svoj Izvorni kod ili samo još jednu ulogu — i u kojoj meri',
+            'Izlaziš sa jasnom slikom svoje Ver 1.0 — dosadašnjeg oblika sebe — i prvim, opipljivim nagoveštajem Ver 2.0'
+          ],
+          outcome: 'prvi put u životu — dokaz, ne osećaj, o tome ko te zaista pokreće.'
+        },
+        {
+          num: 2,
+          title: 'AŽURIRANJE KODA',
+          intro: 'Nakon postavljanja stabilnih temelja, kroz ovaj modul gradimo Formulu identiteta, deo po deo — do 80% završenu.',
+          bullets: [
+            'Dolaziš do svojih ključnih vrednosti — kodova koji određuju kako se energija usmerava',
+            'Pronalaziš svoj lični prekidač koji te brzo vraća u centar/težište',
+            'Prolaziš kroz sve zone talenata do svog neponovljivog, autentičnog potpisa',
+            'Prepoznaješ kanale kroz koje tvoj jedinstveni potpis prirodno izlazi u svet',
+            'Imenuješ i validiraš razlog zbog koga život dobija smisao i ima dodatnu vrednost'
+          ],
+          outcome: 'formula koja skoro potpuno objašnjava ko si — i osećaj da nešto ključno tek treba da dođe.'
+        },
+        {
+          num: 3,
+          title: 'NADOGRADNJA KODA',
+          intro: 'U ovom modulu prelaziš prag koji predstavlja inicijaciju u novo životno iskustvo — i tvoja Formula identiteta se konačno zatvara.',
+          bullets: [
+            'Imenuješ i konačno prelaziš prag preko koga celog života izbegavaš da zakoračiš',
+            'Prepoznaješ kako se najdublja rana svakodnevno maskira kroz navike i kompenzacije',
+            'Transformišeš strah u snagu, umesto da ga i dalje guraš pod tepih',
+            'Otkrivaš svoje veliko Zašto — tačku gde se sve konačno sreće'
+          ],
+          outcome: 'Formulom Identiteta uz pomoć koje se usklađuješ sa daleko uzvišenijim modelom sopstvenog života.'
+        },
+        {
+          num: 4,
+          title: 'AKTIVACIJA KODA',
+          intro: 'U ovom modulu tvoja Formula identiteta se oživljava u tvom svakodnevnom ritmu.',
+          bullets: [
+            'Budi se tvoj unutrašnji ratnik kroz hrabrost da svoju Ver 2.0 oživiš, ne samo razumeš',
+            'Biraš konkretne korake tačno na ivici između udobnosti i rasta — tamo gde se dešava stvarna promena',
+            'Praviš plan i razrađuješ ga u konkretnu, ličnu životnu strategiju',
+            'Aktiviraš Kod koji više ne čeka da bude pročitan, već se živi u svakodnevnom ritmu'
+          ],
+          outcome: 'ne još jedan uvid koji bledi za mesec dana — nego sistem koji traje, i Formula koja živi kroz tebe, a ne samo u tebi.'
+        }
+      ],
+      deliverables: [
+        { text: '21 snimljena video lekcija (ponedeljak/sreda/petak)', icon: '▶', notGift: true },
+        { text: '8 online live susreta (jednom nedeljno)', icon: '◉', notGift: true },
+        { text: '21 interaktivni PDF radni list za svaku lekciju', icon: '▤', notGift: true },
+        { text: '3 testa', icon: '✓', notGift: true },
+        { text: 'Kalendar — raspored aktivnosti', icon: '▦', notGift: true },
+        { text: 'Pristup svim snimljenim lekcijama u trajanju od 6 meseci', icon: '⏱', notGift: true },
+        { text: 'Privatna grupa za podršku između live susreta', icon: '◎', notGift: true },
+        { text: 'Audio verzije ključnih kontemplacija i vizualizacija', icon: '♪', notGift: true },
+        { text: 'Vizuelno dizajnirana, lična Formula identiteta — tvoj završni dokument programa', icon: '✦', notGift: true },
+        { text: 'Poklon bonusi', gift: true }
+      ],
+      audienceProfile: [
+        'Osećaju (često pre nego što umeju da artikulišu), da stari modeli rada, odnosa i identiteta više ne funkcionišu — ni za njih, ni za svet',
+        'Nose vrednosti koje svet oko njih još nije naučio da prepozna',
+        'Deluju uspešno i stabilno spolja — u poslu, porodici, odnosima — a iznutra osećaju da nešto suštinsko čeka da bude viđeno',
+        'Su gotove sa ulogom "Razumenke" — one koja sve razume, sve nosi, sve drži na okupu — a zaboravila je koji je njen sopstveni glas ispod svih tih uloga',
+        'Duboko u sebi znaju da postoji deo njih koji čeka da progovori',
+        'Su spremne za upgrade svog unutrašnjeg operativnog sistema',
+        'I koje jednostavno ne mogu da odustanu od sebe - spremne da prate zov svoje duše'
+      ],
+      audienceYes: [
+        { t: 'Osećaš da nešto ispod površine i dalje piše tvoju priču, i spremna si da se konačno suočiš sa tim' },
+        { t: 'Osećaš da si u tranziciji — menjaš posao, odnos, ili samo način na koji funkcionišeš' },
+        { t: 'Umorna si od uloga, maski i stalnog prilagođavanja drugima' },
+        { t: 'Duboko u sebi znaš da postoji deo tebe koji čeka da bude viđen i oživljen' },
+        { t: 'Osećaš da stari modeli rada, odnosa i identiteta koji su te doveli dovde, više ne funkcionišu.', i: 'Jer vreme je za upgrade.' }
+      ],
+      audienceNo: [
+        'Tražiš brzo rešenje ili još jednu strategiju koju ćeš dodati na sve ostale',
+        'Želiš da ostaneš pasivna posmatračica, bez učešća u sopstvenom procesu',
+        'Nisi spremna da preispitaš priču koju si sebi ispričala i prodavala godinama'
+      ],
+      lessonMap: [
+        {
+          num: 1, title: 'ČITANJE KODA', color: '#3f7ea6', colorSoft: '#3f7ea655',
+          lessons: [
+            { num: 1, title: 'Otvaranje fajla / Pre nego što pritisneš play', offset: 0 },
+            { num: 2, title: 'Dvanaest lica u ogledalu', offset: 26 },
+            { num: 3, title: 'Unutrašnji ples energija', offset: 0 },
+            { num: 4, title: 'Ver 1.0 tebe piše oproštajno pismo', offset: 26 }
+          ]
+        },
+        {
+          num: 2, title: 'AŽURIRANJE KODA', color: '#2f6a8c', colorSoft: '#2f6a8c55',
+          lessons: [
+            { num: 5, title: 'Kompas duše', offset: 0 },
+            { num: 6, title: 'Lumenis: Reset za dušu', offset: 26 },
+            { num: 7, title: 'Frekvencija Ljubavi', offset: 0 },
+            { num: 8, title: 'Prva skica tvoje Ver\u00A02.0', offset: 40 },
+            { num: 9, title: 'Talenti 1: Bitka koja nikad nije bila tvoja', offset: 0, breakAfter: true },
+            { num: 10, title: 'Talenti 2: Zlatni kavez sa pogledom — aplauz koji te drži zarobljenom', offset: 26 },
+            { num: 11, title: 'Talenti 3: Lični pečat koji niko ne može da falsifikuje', offset: 0 },
+            { num: 12, title: 'Glasnici tvog dara', offset: 26 },
+            { num: 13, title: 'Seme koje je čekalo pravo\u00A0tlo', offset: 0 },
+            { num: 14, title: 'Pismo za tvoju Ver 2.0, još nedovršeno', offset: 26 }
+          ]
+        },
+        {
+          num: 3, title: 'NADOGRADNJA KODA', color: '#74b0d2', colorSoft: '#74b0d255',
+          lessons: [
+            { num: 15, title: 'Prag ka tvojoj Ver 2.0 — Rana koja isceljuje', offset: 0 },
+            { num: 16, title: 'Maske bekstva', offset: 26 },
+            { num: 17, title: 'Zmaj koji čuva blago', offset: 0 },
+            { num: 18, title: 'Tvoje veliko Zašto', offset: 26 }
+          ]
+        },
+        {
+          num: 4, title: 'AKTIVACIJA KODA', color: '#0b2436', colorSoft: '#0b243655',
+          lessons: [
+            { num: 19, title: 'Buđenje unutrašnjeg ratnika', offset: 0 },
+            { num: 20, title: 'Mapa za one koji se više ne prave da ne znaju put', offset: 26 },
+            { num: 21, title: 'Strategija: Kod koji se živi', offset: 0 }
+          ]
+        }
+      ],
+      faqs: [
+        { q: 'Da li mi treba prethodno znanje o energetskoj psihologiji, arhetipovima ili astrologiji?', a: 'Ne. Svu astrološku terminologiju prevodim na običan i praktičan jezik. Program te vodi korak po korak. Sve što ti je potrebno je spremnost da budeš iskrena prema sebi.' },
+        { q: 'Koliko traje program?', a: 'Osam nedelja — 21 lekcija kroz snimljene video zapise (pon/sre/pet) i isto toliko interaktivnih radnih listova u .pdf formatu; zajedno sa 8 nedeljnih live susreta uživo.' },
+        { q: 'Šta ako propustim live susret?', a: 'Ne brini. Live susreti se snimaju i šalju učesnicima koji su propustili ili bili sprečeni da se pojave uživo. Na početku programa dobijaš kalendar i raspored lekcija i okupljanja, kako bi pravovremeno mogla da uskladiš svoje obaveze sa programom. ' },
+        { q: 'Koliko vremena nedeljno treba da izdvojim?', a: 'Do 3h za video lekcije, plus jedan live susret do 1h, plus koliko ti treba u pasivnom modu. Ali ne brini, toliko je zabavno da ćeš sama nabaždariti svoj operativni sistem na novi mindset (čitaj: soulset) u svojoj Ver  2,0' },
+        { q: 'Da li radim ovo sama, ili ima podrške tokom programa?', a: 'Imaš i jedno i drugo — svoj tempo tri puta nedeljno, uživo jednom nedeljno, i privatna grupa između susreta.' },
+        { q: 'Šta ako kupim samo Modul 1, pa se ne odlučim za ostatak?', a: 'Modul 1 je kompletan, samostalan proizvod — bez obaveze da ideš dalje. Samo sa ovim modulom moći ćeš jasno da sklopiš sliku tvoje Ver1.0 koja je do sada vodila tvoj unutrašnji operativni sistem. Izdvojili smo ovaj modul kao jedan paket jer smatramo da svako treba da ga prodje. ' },
+        { q: 'Šta ako se kasnije predomislim i poželim ceo program?', a: 'Doplaćuješ razliku do pune cene programa u datom trenutku, bez obzira kada se odlučiš.' },
+        { q: 'Koliko dugo imam pristup materijalima?', a: 'Šest meseci od datuma kupovine.' },
+        { q: 'Da li program radi i za muškarce?', a: 'Da. Arhetipski obrazci koje program obrađuje — isti su kod oba pola.' }
+      ].map((f, i) => ({
+        ...f,
+        open: this.state.openFaq === i,
+        chevronTransform: this.state.openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)',
+        toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? null : i }))
+      }))
+    };
+  }
+}
+
+</script>
+</body>
+</html>
