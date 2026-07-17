@@ -9,9 +9,9 @@
 <x-dc>
 <template id="__bundler_thumbnail" data-bg-color="#081420">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#081420"/>
-    <circle cx="600" cy="400" r="4" fill="#e3bb75"/>
-    <path d="M600 250 L616 384 L750 400 L616 416 L600 550 L584 416 L450 400 L584 384 Z" fill="#e3bb75"/>
+    <rect width="1200" height="800" fill="#081420"></rect>
+    <circle cx="600" cy="400" r="4" fill="#e3bb75"></circle>
+    <path d="M600 250 L616 384 L750 400 L616 416 L600 550 L584 416 L450 400 L584 384 Z" fill="#e3bb75"></path>
   </svg>
 </template>
 <helmet data-dc-atomics="">
@@ -43,6 +43,8 @@ a{color:inherit}
   [data-screen-label="O meni"]{padding-top:34px !important;padding-bottom:34px !important}
   [data-screen-label="FAQ"]{padding-top:34px !important;padding-bottom:34px !important}
   [data-screen-label="Kontakt"]{padding-top:26px !important;padding-bottom:26px !important}
+  [data-screen-label="Kontakt"] svg{width:13px !important;height:13px !important}
+  [data-screen-label="Kontakt"] a[href*="instagram"]{font-size:11.5px !important}
 }
 </style>
 </helmet>
@@ -85,16 +87,16 @@ a{color:inherit}
       <p>Svet oko tebe još uvek govori starim jezikom — jezikom uloga, titula, merila koja tebe ne mere. Dok čekaš da te taj svet konačno prepozna, nešto u tebi tiho gori, neprimećeno, iz dana u dan.</p>
       <p>Nisi izgubljena. Nikad nisi ni bila. Samo si predugo govorila tuđim glasom, u tuđoj priči, po tuđim pravilima igre — dok je tvoj Izvorni kod čekao, strpljivo, da ga se konačno setiš. Ono što nazivaš "nisam dovoljno…" nije istina o tebi — to je samo stari kod, ugrađen davno, koji i dalje radi u pozadini tvog unutrašnjeg operativnog sistema.</p>
       <p>To je tvoja <b>Ver 1.0</b> — verzija sastavljena od tuđih pravila, tuđih glasova, tuđih merila uspeha. Radila je, dovela te dovde. Ali nije ono što jesi u suštini — samo je ono što si do sada znala da pokreneš.</p>
-      <p style="font:italic 700 14px/1.6 Jost,sans-serif;color:#2f6a8c;text-align:center;margin:30px 0 0">TO SE SADA ZAVRŠAVA.</p>
+      <p style="font:italic 700 14px/1.6 Jost,sans-serif;color:#2f6a8c;text-align:center;margin:30px 0 0"><span style="font-style: normal;">TO SE SADA ZAVRŠAVA.</span></p>
       </div>
-      <image-slot id="manifesto-v1" shape="rect" style="flex:0 1 260px;min-width:200px;max-width:280px;aspect-ratio:4/5;border-radius:4px;filter:drop-shadow(0 0 24px rgba(227,187,117,.45));-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%)" placeholder="Silueta/senka žene koja gleda svoj odraz — simbol Ver 1.0" src="assets/manifesto-transformation.png"></image-slot>
+      <image-slot id="manifesto-v1" shape="rect" style="flex:0 1 260px;min-width:200px;max-width:280px;aspect-ratio:4/5;border-radius:4px;filter:drop-shadow(0 0 24px rgba(227,187,117,.45));-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 68%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at center,#000 68%,transparent 100%)" placeholder="Silueta/senka žene koja gleda svoj odraz — simbol Ver 1.0" src="assets/manifesto-transformation.png"></image-slot>
     </div>
   </div>
 
   <!-- MANIFESTO PART 2 -->
   <div data-screen-label="Manifesto — Ver 2.0" style="background:#fbfdfc;padding:40px clamp(20px,6vw,90px) clamp(50px,10vw,84px);text-align:center">
     <div id="manifesto2-row" style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;gap:44px;align-items:center;text-align:left">
-      <image-slot id="manifesto-v2" shape="rect" style="flex:0 1 260px;min-width:200px;max-width:280px;aspect-ratio:4/5;border-radius:4px;filter:drop-shadow(0 0 24px rgba(227,187,117,.45));-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%)" placeholder="Žena okrenuta ka svetlosti/zvezdanom nebu — simbol Ver 2.0" src="assets/manifesto-v2-light.png"></image-slot>
+      <image-slot id="manifesto-v2" shape="rect" style="flex:0 1 260px;min-width:200px;max-width:280px;aspect-ratio:4/5;border-radius:4px;filter:drop-shadow(0 0 24px rgba(227,187,117,.45));-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 68%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at center,#000 68%,transparent 100%)" placeholder="Žena okrenuta ka svetlosti/zvezdanom nebu — simbol Ver 2.0" src="assets/manifesto-v2-light.png"></image-slot>
       <div style="flex:1 1 320px;min-width:260px;font:400 14px/1.8 Jost,sans-serif;color:#1e2a30;text-align:center">
       <p>Tvoja vrednost ne čeka tuđe odobrenje. Ona je bila tu pre svake uloge koju si igrala, i biće tu posle svake maske koju skineš.</p>
       <p>Neka ovo bude trenutak kad prestaješ da tražiš dozvolu da postojiš i budeš ono što jesi — i počinješ da se vraćaš na Izvorni kod iz kog je sve krenulo.</p>
@@ -142,7 +144,7 @@ a{color:inherit}
   </div>
 
   <!-- WHAT YOU GET -->
-  <div data-screen-label="Šta dobijaš" style="background:#fbfdfc;padding:clamp(44px,8vw,70px) clamp(20px,6vw,90px)">
+  <div data-screen-label="Šta dobijaš" style="background:#fbfdfc;padding:clamp(36px,6vw,56px) clamp(20px,6vw,72px)">
     <h2 style="font:500 30px 'Bodoni Moda',serif;text-align:center;margin:0 0 38px;color:#111c26"><i>Šta dobijaš</i></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 36px;max-width:740px;margin:0 auto">
       <sc-for list="{{ deliverables }}" as="d" hint-placeholder-count="9">
@@ -206,11 +208,11 @@ a{color:inherit}
   </sc-if>
 
   <!-- YES/NO -->
-  <div data-screen-label="Da li je ovo za tebe" style="background:#fbfdfc;padding:clamp(44px,8vw,70px) clamp(20px,6vw,90px)">
-    <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;text-align:center;margin:0 0 40px"><i>Da li je ovo za tebe ?</i></h2>
+  <div data-screen-label="Da li je ovo za tebe" style="background:#fbfdfc;padding:clamp(36px,6vw,56px) clamp(20px,6vw,72px)">
+    <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;text-align:center;margin:0 0 40px"><i>Da li je Izvorni Kod za tebe ?</i></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:44px">
       <div>
-        <div style="font:500 12px Jost;color:#3f7ea6;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">✓ Ovo je za tebe ako…</div>
+        <div style="font:500 12px Jost;color:#3f7ea6;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">✓&nbsp; ZA TEBE AKO…</div>
         <sc-for list="{{ audienceYes }}" as="y" hint-placeholder-count="4">
           <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
             <span style="color:#3f7ea633;font:11px Jost;flex:none;margin-top:2px">✦</span>
@@ -219,7 +221,7 @@ a{color:inherit}
         </sc-for>
       </div>
       <div>
-        <div style="font:500 12px Jost;color:#a35b4a;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">✕ Ovo nije za tebe ako…</div>
+        <div style="font:500 12px Jost;color:#a35b4a;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">✕&nbsp; NIJE ZA TEBE AKO…</div>
         <sc-for list="{{ audienceNo }}" as="n" hint-placeholder-count="3">
           <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
             <span style="color:#a35b4a33;font:11px Jost;flex:none;margin-top:2px">✕</span>
@@ -231,7 +233,7 @@ a{color:inherit}
   </div>
 
   <!-- PRICING -->
-  <div data-screen-label="Cena" style="background:#eaf1f6;padding:clamp(44px,8vw,72px) clamp(20px,6vw,90px);text-align:center">
+  <div data-screen-label="Cena" style="background:#eaf1f6;padding:clamp(36px,6vw,56px) clamp(20px,6vw,72px);text-align:center">
     <p style="font:300 13.5px Jost;color:#e3bb75;opacity:.7;margin:0 0 20px">VRATI SE NA IZVORNI KOD</p>
     
     <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;margin:0 0 40px"><i>Izaberi paket koji ti najviše odgovara&nbsp;</i></h2><div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:stretch;margin-top:14px">
@@ -269,10 +271,11 @@ a{color:inherit}
         <div style="position:relative;z-index:1;display:flex;justify-content:center;margin-top:16px"><a href="https://forms.gle/wrHyMiDW9NG78mgc6" target="_blank" rel="noopener" style="display:inline-flex;padding:11px 26px;background:{{ accentColor }};color:#0b2436;border-radius:2px;font:500 12px Jost,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none">Prijavljujem se</a></div>
       </div>
     </div>
+    <p style="font: italic 300 17px Jost,sans-serif; color: #3D6385; margin: 28px 0 0">Program počinje <b style="font-weight:700">29.07.</b> Prijave su u toku.</p>
   </div>
 
   <!-- ABOUT -->
-  <div data-screen-label="O meni" id="about" style="background:#fbfdfc;padding:clamp(44px,8vw,76px) clamp(20px,6vw,90px);display:flex;flex-wrap:wrap;gap:clamp(28px,6vw,60px);align-items:center;scroll-margin-top:100px">
+  <div data-screen-label="O meni" id="about" style="background:#fbfdfc;padding:clamp(36px,6vw,56px) clamp(20px,6vw,72px);display:flex;flex-wrap:wrap;gap:clamp(28px,6vw,60px);align-items:center;scroll-margin-top:100px">
     <div id="about-photo" style="flex:none;width:230px;height:290px;margin:0 auto;border-radius:4px;overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);mask-composite:intersect"><img src="assets/milena-portrait.png" alt="Milena Trifunović" style="width:100%;height:100%;object-fit:cover;display:block;filter:blur(0px)"></div>
     <div style="flex:1 1 320px;min-width:260px">
       <h2 style="font:500 26px 'Bodoni Moda',serif;color:#111c26;margin:0 0 16px"><i>O meni ...</i></h2>
@@ -291,7 +294,7 @@ stvorio Davida, odgovorio je: </span>"Nisam video kamen. Video sam Davida u kame
   </div>
 
   <!-- FAQ -->
-  <div data-screen-label="FAQ" id="faq" style="background:#eaf1f6;padding:clamp(44px,8vw,76px) clamp(20px,6vw,90px);scroll-margin-top:100px">
+  <div data-screen-label="FAQ" id="faq" style="background:#eaf1f6;padding:clamp(36px,6vw,56px) clamp(20px,6vw,72px);scroll-margin-top:100px">
     <h2 style="font:500 30px 'Bodoni Moda',serif;color:#111c26;text-align:center;margin:0 0 40px"><i>Često postavljana pitanja</i></h2>
     <div style="max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:0">
       <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="9">
@@ -320,6 +323,9 @@ Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
 mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
 mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><i>Pitanja
 u vezi programa? Zakaži besplatni poziv na</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;porodicanovogdoba</span>@gmail.com</div>
+    <a href="https://www.instagram.com/mikelandjelo.na.identitet/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;margin-top:14px;font:300 13px Jost,sans-serif;color:#e3bb75;text-decoration:none" style-hover="opacity:.8"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#e3bb75" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="#e3bb75" stroke="none"></circle></svg>@mikelandjelo.na.identitet</a>
+    <div style="position:relative;max-width:280px;margin:34px auto 20px;height:1px;background:linear-gradient(90deg,transparent,#e3bb7566 15%,#e3bb7599 50%,#e3bb7566 85%,transparent)"></div>
+    <div style="font:300 11.5px Jost,sans-serif;color:#7c94a3">© 2026 — Sva prava zadržana.</div>
     </div>
   </div>
 
@@ -445,7 +451,7 @@ class Component extends DCLogic {
             { num: 11, title: 'Talenti 3: Lični pečat koji niko ne može da falsifikuje', offset: 0 },
             { num: 12, title: 'Glasnici tvog dara', offset: 26 },
             { num: 13, title: 'Seme koje je čekalo pravo\u00A0tlo', offset: 0 },
-            { num: 14, title: 'Pismo za tvoju Ver 2.0, još nedovršeno', offset: 26 }
+            { num: 14, title: 'Pismo za tvoju Ver 2.0, \n još nedovršeno', offset: 26 }
           ]
         },
         {
@@ -475,7 +481,7 @@ class Component extends DCLogic {
         { q: 'Šta ako kupim samo Modul 1, pa se ne odlučim za ostatak?', a: 'Modul 1 je kompletan, samostalan proizvod — bez obaveze da ideš dalje. Samo sa ovim modulom moći ćeš jasno da sklopiš sliku tvoje Ver1.0 koja je do sada vodila tvoj unutrašnji operativni sistem. Izdvojili smo ovaj modul kao jedan paket jer smatramo da svako treba da ga prodje. ' },
         { q: 'Šta ako se kasnije predomislim i poželim ceo program?', a: 'Doplaćuješ razliku do pune cene programa u datom trenutku, bez obzira kada se odlučiš.' },
         { q: 'Koliko dugo imam pristup materijalima?', a: 'Šest meseci od datuma kupovine.' },
-        { q: 'Da li program radi i za muškarce?', a: 'Da. Arhetipski obrazci koje program obrađuje — isti su kod oba pola.' }
+        { q: 'Da li je program samo za žene?', a: 'Ne. Arhetipski obrazci koje program obrađuje — isti su kod oba pola. Super je koristan i za žene i za muškarce.' }
       ].map((f, i) => ({
         ...f,
         open: this.state.openFaq === i,
